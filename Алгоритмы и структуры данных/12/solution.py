@@ -56,4 +56,4 @@ def main(image_path):
     result_image.save("restored_image.bmp")
 
 if __name__ == "__main__":
-    main("your_image.bmp")
+    main("./test_image.bmp")
