@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mock-payment-service"
+version = "0.1.0"
+description = ""
+authors = ["Mikhail Mogilnikov <mikhail.mogilnikov02@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = "^0.115.6"
+pydantic = "^2.10.4"
+sqlalchemy = "^2.0.36"
+structlog = "^24.4.0"
+uvicorn = "^0.34.0"
+typer = "^0.15.1"
+alembic = "^1.14.0"
+dynaconf = "^3.2.6"
+
+
+[tool.poetry.group.dev.dependencies]
+pyyaml = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
